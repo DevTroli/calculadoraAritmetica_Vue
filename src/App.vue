@@ -1,8 +1,9 @@
 <script>
 import { reactive } from 'vue'
 
-export default () => {
-   const estado = reactive({
+export default {
+  setup() {
+    const estado = reactive({
       num1: 0,
       num2: 0,
       operation: 'adição',
@@ -30,6 +31,7 @@ export default () => {
 
     return { estado, calcularResultado }
   }
+}
 </script>
 
 <template>
